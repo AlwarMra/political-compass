@@ -1,0 +1,63 @@
+@import './base.css';
+.container {
+  max-width: 1206px;
+  margin: 0 auto;
+}
+main {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+}
+p {
+  margin-top: 1rem;
+}
+a {
+  color: var(--color-main);
+}
+strong {
+  font-weight: 700;
+}
+.flex {
+  display: flex;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-main);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s background-color ease-in-out;
+  font-size: 1.25rem;
+  background-color: var(--color-background);
+  cursor: pointer;
+}
+.btn--strong-agree {
+  background-color: rgba(var(--vt-c-green), 1);
+}
+.btn--agree {
+  background-color: rgba(var(--vt-c-green), 0.6);
+  border: 1px solid rgba(var(--vt-c-green), 0.6);
+}
+.btn--strong-disagree {
+  background-color: rgba(var(--vt-c-red), 1);
+  border: 1px solid rgba(var(--vt-c-red), 1);
+}
+.btn--disagree {
+  background-color: rgba(var(--vt-c-red), 0.6);
+  border: 1px solid rgba(var(--vt-c-red), 0.6);
+}
+.btn--neutral {
+  background-color: var(--vt-c-text-dark-2);
+  border: 1px solid var(--vt-c-text-dark-2);
+}
+.btn:hover {
+  background-color: rgba(var(--vt-c-green), 0.1);
+  transition: 0.2s background-color ease-in-out;
+}
+.btn--strong-disagree:hover,
+.btn--disagree:hover {
+  background-color: rgba(var(--vt-c-red), 0.1);
+}
+.btn--neutral:hover {
+  background-color: white;
+}
